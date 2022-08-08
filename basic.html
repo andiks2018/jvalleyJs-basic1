@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BASIC JS</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <main>
+    <h1 id="title">Hello World</h1>
+    <button onclick="alert('kamu menekan tombol')">Click dunk</button>
+    <button onclick="window.open('https://jvalleybootcamp.com')">ke web</button>
+    <button onclick="document.getElementById('title').style.color='red'">jadi merah</button>    
+    <button onclick="document.getElementById('title').style.color='blue'">jadi biru</button>
+  </main>
+
+
+  <script>
+    console.info("Javascript berhasil berjalan")
+
+    //js merubah content dari element h1 dengan id title 
+    document.getElementById("title").innerHTML= "Hello mantan"
+
+
+    // js merubah stle pada element h1
+    document.getElementById("title").style.color='green'
+
+    //ubah ukuran font element h1 dengan id title menjadi 64px
+    document.getElementById("title").style.fontSize="64px"
+  </script>
+</body>
+</html>
